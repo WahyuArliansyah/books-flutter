@@ -37,3 +37,5 @@ Memanggil fungsi-fungsi `asynchronous` tersebut secara berurutan, menunggu setia
 # Soal 6
 
 Perbedaan nya adalah codingan dilangkah ke 2 lebih sederhana namun gampang error, sedangkan dilangkah 5-6 lebih aman dan roubust karena adanya mekanisme penanganan error.
+
+![soal6](images/soal6.gif)
