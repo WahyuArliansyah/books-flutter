@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Wahyu',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -27,25 +28,46 @@ class FuturePage extends StatefulWidget {
 
   @override
   State<FuturePage> createState() => _FuturePageState();
+}
+
+class _FuturePageState extends State<FuturePage> {
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
     const path = '/books/v1/volumes/WYgoEAAAQBAJ';
     Uri url = Uri.https(authority, path);
     return http.get(url);
   }
-}
 
-class _FuturePageState extends State<FuturePage> {
   String result = '';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Back from the future')),
+      appBar: AppBar(
+        title: const Text(
+          'Back from the future',
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.blue,
+      ),
       body: Center(
         child: Column(
           children: [
             const Spacer(),
-            ElevatedButton(onPressed: () {}, child: const Text('Go')),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {});
+                getData()
+                    .then((value) {
+                      result = value.body.toString().substring(0, 450);
+                      setState(() {});
+                    })
+                    .catchError((_) {
+                      result = 'An Error occured';
+                      setState(() {});
+                    });
+              },
+              child: const Text('Go'),
+            ),
             const Spacer(),
             Text(result),
             const Spacer(),
