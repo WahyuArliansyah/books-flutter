@@ -6,8 +6,12 @@
 
 ## Soal 3 (Gif)
 
-## substring untuk membatasi hasil respon API hanya 450 karakter pertama untuk menjaga tampilan UI agar tetap rapih
+### Substring untuk Membatasi Hasil Respon API
 
-## catchError untuk menangani error yang mungkin terjadi selama proses pengambilan data dan memperbarui UI dengan pesan Error
+Anda dapat menggunakan `substring` untuk membatasi hasil respon API hanya 450 karakter pertama. Ini berguna untuk menjaga tampilan UI agar tetap rapi.
+
+### CatchError untuk Menangani Error
+
+Gunakan `catchError` untuk menangani error yang mungkin terjadi selama proses pengambilan data. Ini akan memperbarui UI dengan pesan error yang sesuai.
 
 ![soal3](images/soal3.gif)
