@@ -66,3 +66,9 @@ Menambahkan nama di title (Wahyu)
 Saya mendapatkan koordinat GPS ketika run dibrowser karena browser mendukung `Geolocation API` dan saya sudah memberikan izin lokasi, saya juga run aplikasi di `localhost`, yang diizinkan oleh browser untuk mengakses lokasi walaupun saya menggunakan `HTTP`
 
 ![soal12](images/soal12.gif)
+
+## Soal 13
+
+Perebedaan nya kalo kode sebelumnya menggunakan pendekatan manual dengan `then` dan `setState`, yang lebih cocok untuk kasus sederhana tetapi kurang efisien untuk penanganan error dan pembaruan UI. Sedangkan yang sekarang menggunakan `FutureBuilder`, yang lebih bersih, mudah dipahami, dan otomatis menangani pembaruan UI serta error.
+
+![soal13](images/soal13.gif)
