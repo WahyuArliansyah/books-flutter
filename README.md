@@ -27,3 +27,13 @@ Membuat fungsi `asynchronous` yang menunggu setiap 3 detik (`returnOneAsync`, `r
 Memanggil fungsi-fungsi `asynchronous` tersebut secara berurutan, menunggu setiap fungsi selesai, dan menjumlahkan hasilnya.
 
 ![soal4](images/soal4.gif)
+
+## Soal 5
+
+`calculate` adalah fungsi asynchronous yang menunggu 5 detik, lalu menyelesaikan Future yang terkait dengan `completer` menggunakan `completer.complete(42)`.
+
+![soal5](images/soal5.gif)
+
+# Soal 6
+
+Perbedaan nya adalah codingan dilangkah ke 2 lebih sederhana namun gampang error, sedangkan dilangkah 5-6 lebih aman dan roubust karena adanya mekanisme penanganan error.
