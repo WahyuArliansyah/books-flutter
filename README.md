@@ -56,3 +56,13 @@ Perbedaan nya adalah jika menggunalan `FutureGroup` lebih cocok jika perlu menam
 
 Jika di run hasilnya program akan menjalankan `returnError()` secara asynchronus, misalkan terjadi error UI akan menampilkan pesan error tetapi jika tidak UI akan menampilkan pesan `Success`.
 `returnError()` adalah method yang mensimulasikan operasi gagal dengan melempar exception setelah menunggu 2 detik. Sedangkan `handleError()` adalah method untuk menangani error yang mungkin terjadi saat menjalankan `returnError()`, serta memperbarui UI dan menjalankan blok `finally`.
+
+## Soal 11
+
+Menambahkan nama di title (Wahyu)
+
+## Soal 12
+
+Saya mendapatkan koordinat GPS ketika run dibrowser karena browser mendukung `Geolocation API` dan saya sudah memberikan izin lokasi, saya juga run aplikasi di `localhost`, yang diizinkan oleh browser untuk mengakses lokasi walaupun saya menggunakan `HTTP`
+
+![soal12](images/soal12.gif)
