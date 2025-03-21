@@ -43,3 +43,7 @@ Perbedaan nya adalah codingan dilangkah ke 2 lebih sederhana namun gampang error
 ## Soal 7
 
 ![soal7](images/soal7.gif)
+
+## Soal 8
+
+Perbedaan nya adalah jika menggunalan `FutureGroup` lebih cocok jika perlu menambahkan `Future` secara dinamis, namun kurang efektif dan gampang error, sedangkan `Future.wait` lebih sederhana, efektif, dan aman.
