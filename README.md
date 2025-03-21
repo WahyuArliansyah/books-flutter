@@ -47,3 +47,12 @@ Perbedaan nya adalah codingan dilangkah ke 2 lebih sederhana namun gampang error
 ## Soal 8
 
 Perbedaan nya adalah jika menggunalan `FutureGroup` lebih cocok jika perlu menambahkan `Future` secara dinamis, namun kurang efektif dan gampang error, sedangkan `Future.wait` lebih sederhana, efektif, dan aman.
+
+## Soal 9
+
+![soal9](images/soal9.gif)
+
+## Soal 10
+
+Jika di run hasilnya program akan menjalankan `returnError()` secara asynchronus, misalkan terjadi error UI akan menampilkan pesan error tetapi jika tidak UI akan menampilkan pesan `Success`.
+`returnError()` adalah method yang mensimulasikan operasi gagal dengan melempar exception setelah menunggu 2 detik. Sedangkan `handleError()` adalah method untuk menangani error yang mungkin terjadi saat menjalankan `returnError()`, serta memperbarui UI dan menjalankan blok `finally`.
