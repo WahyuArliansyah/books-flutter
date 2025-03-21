@@ -15,3 +15,15 @@ Anda dapat menggunakan `substring` untuk membatasi hasil respon API hanya 450 ka
 Gunakan `catchError` untuk menangani error yang mungkin terjadi selama proses pengambilan data. Ini akan memperbarui UI dengan pesan error yang sesuai.
 
 ![soal3](images/soal3.gif)
+
+## Soal 4
+
+### Langkah 1
+
+Membuat fungsi `asynchronous` yang menunggu setiap 3 detik (`returnOneAsync`, `returnTwoAsync`, dan `returnThreeAsync`) dan mengembalikan nilai integer
+
+### Langkah 2
+
+Memanggil fungsi-fungsi `asynchronous` tersebut secara berurutan, menunggu setiap fungsi selesai, dan menjumlahkan hasilnya.
+
+![soal4](images/soal4.gif)
