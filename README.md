@@ -156,3 +156,5 @@ Future<void> _showColorDialog(BuildContext context) async {
     }
   }
 ```
+
+![soal17](images/soal17.gif)
