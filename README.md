@@ -72,3 +72,9 @@ Saya mendapatkan koordinat GPS ketika run dibrowser karena browser mendukung `Ge
 Perebedaan nya kalo kode sebelumnya menggunakan pendekatan manual dengan `then` dan `setState`, yang lebih cocok untuk kasus sederhana tetapi kurang efisien untuk penanganan error dan pembaruan UI. Sedangkan yang sekarang menggunakan `FutureBuilder`, yang lebih bersih, mudah dipahami, dan otomatis menangani pembaruan UI serta error.
 
 ![soal13](images/soal13.gif)
+
+## Soal 14
+
+Menambahkan pengecekan `snapshot.hasError` di dalam blok `else if (snapshot.connectionState == ConnectionState.done)` memberikan penanganan error yang lebih baik dan mencegah runtime error.
+
+![soal14](images/soal14.gif)
