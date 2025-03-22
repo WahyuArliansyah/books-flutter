@@ -59,7 +59,14 @@ Jika di run hasilnya program akan menjalankan `returnError()` secara asynchronus
 
 ## Soal 11
 
-Menambahkan nama di title (Wahyu)
+Menambahkan nama di title
+
+```Dart
+title: const Text(
+          'Current Location Wahyu',
+          style: TextStyle(color: Colors.white),
+        ),
+```
 
 ## Soal 12
 
@@ -98,3 +105,54 @@ Color color = Colors.blue;
 3. Ini adalah pola umum dalam Flutter untuk meneruskan data antar screen menggunakan `Navigator.push` dan `Navigator.pop`.
 
 ![soal16](images/soal16.gif)
+
+## Soal 17
+
+1. Ketika klik tombol "Change Color", dialog muncul dengan tiga pilihan warna.
+2. Ketika memilih salah satu warna, dialog akan ditutup, dan warna latar belakang screen akan berubah sesuai dengan pilihan Anda.
+3. `showDialog` menampilkan dialog dengan pilihan warna.
+4. `Navigator.pop` mengembalikan warna yang dipilih ke screen sebelumnya.
+5. `setState` memperbarui state dan membangun ulang widget dengan warna baru.
+
+Ganti warna dengan warna favorit
+
+```Dart
+Future<void> _showColorDialog(BuildContext context) async {
+    final selectedColor = await showDialog<Color>(
+      barrierDismissible: false,
+      context: context,
+      builder: (_) {
+        return AlertDialog(
+          title: Text('Very Important Dialog'),
+          content: Text('Please choose the color'),
+          actions: <Widget>[
+            TextButton(
+              child: Text('Cyan Accent'),
+              onPressed: () {
+                Navigator.pop(context, Colors.cyanAccent);
+              },
+            ),
+            TextButton(
+              child: Text('Yellow'),
+              onPressed: () {
+                Navigator.pop(context, Colors.yellow);
+              },
+            ),
+            TextButton(
+              child: Text('Blue Grey'),
+              onPressed: () {
+                Navigator.pop(context, Colors.blueGrey);
+              },
+            ),
+          ],
+        );
+      },
+    );
+
+    if (selectedColor != null) {
+      setState(() {
+        color = selectedColor;
+      });
+    }
+  }
+```
