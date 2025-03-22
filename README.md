@@ -78,3 +78,23 @@ Perebedaan nya kalo kode sebelumnya menggunakan pendekatan manual dengan `then` 
 Menambahkan pengecekan `snapshot.hasError` di dalam blok `else if (snapshot.connectionState == ConnectionState.done)` memberikan penanganan error yang lebih baik dan mencegah runtime error.
 
 ![soal14](images/soal14.gif)
+
+## Soal 15
+
+Menambahkan nama panggilan di setiap title didalam class NavigatorFirst dan mengganti warna dengan tema Favorit
+
+```Dart
+appBar: AppBar(title: const Text('Navigator First Screen Wahyu')),
+```
+
+```Dart
+Color color = Colors.blue;
+```
+
+## Soal 16
+
+1. Ketika Anda mengklik tombol di `NavigationSecond`, screen akan ditutup dan mengembalikan warna yang dipilih ke screen sebelumnya.
+2. Screen sebelumnya dapat menggunakan warna tersebut untuk memperbarui UI, seperti mengubah warna latar belakang.
+3. Ini adalah pola umum dalam Flutter untuk meneruskan data antar screen menggunakan `Navigator.push` dan `Navigator.pop`.
+
+![soal16](images/soal16.gif)
